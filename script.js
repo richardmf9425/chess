@@ -1,6 +1,7 @@
 let board = null;
 const game = new Chess();
 $('.checkWarn').hide();
+
 // Random move example from chessboard.js documentation
 function makeRandomMove() {
 	const possibleMoves = game.moves();

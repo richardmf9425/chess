@@ -19,6 +19,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 80px;
+    text-align: center;
+    margin-left: 60px;
     border-radius: 5px;
+}
+
+.depthRange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.depthRange label {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 5px;
+}
+
+.depthRange div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#depthValue {
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
 }

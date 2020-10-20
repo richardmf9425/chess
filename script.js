@@ -77,16 +77,6 @@ const findBestMoveWithMiniMax = (game, depth, color, maximizingPlayer) => {
 
 	const availableMoves = game.moves().sort((a, b) => a * Math.random() - 4 * b);
 	let bestMove = null;
-	// const moveValue = maximizingPlayer ? Number.NEGATIVE_INFINITY : Number.POSITIVE_INFINITY;
-
-	// availableMoves.forEach(move => {
-	// 	game.move(move);
-	// 	const {value} = findBestMoveWithMiniMax(game, depth - 1, color, !maximizingPlayer);
-	// });
-
-	// if(maximizingPlayer) {
-	// 	if(value > )
-	// }
 	if (maximizingPlayer) {
 		let maxValue = Number.NEGATIVE_INFINITY;
 		availableMoves.forEach((move) => {

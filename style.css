@@ -28,14 +28,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px;
+    padding: 30px;
 }
 .depthRange {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px;
+    padding-top: 20px;
 }
 
 .depthRange label {

@@ -41,6 +41,7 @@ const calcBoardEval = (board, color) => {
 	return boardTotalValue;
 };
 
+// From chessprogramming.org
 const whitePawnEvalInBoard = [
 	[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 	[ 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0 ],
@@ -353,8 +354,6 @@ const onDrop = (source, target) => {
 	if (!move) return 'snapback';
 	const moveCallback = () => {
 		const algorithmSelected = $('#algorithm').val();
-
-		// const bestMove = findBestMoveAhead('b');
 		const depth = $('#treeDepth').val() || 3;
 		let move;
 		const startTime = new Date().getTime();

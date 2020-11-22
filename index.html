@@ -12,13 +12,28 @@
         <div class="checkWarn">CHECK</div>
     </div>
     <div id="board" class="board"></div>
-    <div class="depthRange">
-        <label for="treeDepth">Select Depth for Minimax:</label>
-        
-        <div><input id="treeDepth" type="range" min="1" max="10" value="3" step="1"><span id="depthValue">3</span></div>
+    <div class="settings">
+        <div>
+            <label for="algorithm">Choose an algorithm: </label>
+            <select name="algorithm" id="algorithm">
+                <option value="moveAhead">Best Move Ahead</option>
+                <option value="minimax">Minimax</option>
+                <option value="minimaxPruning">Minimax with AB Pruning</option>
+                <option value="minimaxPruningAndPosition">Minimax with Pruning and position heuristics</option>
+            </select>
+        </div>
+        <div class="depthRange" style="display: none;">
+            <label for="treeDepth">Select Depth for Minimax:</label>
+            
+            <div><input id="treeDepth" type="range" min="1" max="10" value="3" step="1"><span id="depthValue">3</span></div>
+            
+        </div>
+        <div style='padding: 20px;'> <strong>Time: </strong> <span id='time'></span></div>
+        <div style='padding: 20px;'> <strong>Positions Evaluated: </strong> <span id='counter'>0</span></div>
     </div>
+    
 
-    <div id="move-history" class="move-history">
+   
     </div>
     </div>
     <!-- Deps -->

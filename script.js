@@ -183,6 +183,7 @@ const findBestMoveAhead = (color) => {
 	let bestMove = Number.NEGATIVE_INFINITY;
 	availableMoves.forEach(function(move) {
 		game.move(move);
+		counter++;
 		const moveValue = calcBoardEval(game.board(), color);
 		if (moveValue > bestMove) {
 			bestMoveAhead = move;
@@ -341,7 +342,7 @@ const onDrop = (source, target) => {
 		to: target,
 		promotion: 'q'
 	});
-
+	counter = 0;
 	if (game.in_check() && !game.game_over()) {
 		$('.checkWarn').show();
 	}
